@@ -1,0 +1,44 @@
+header {
+  background: linear-gradient(-45deg, #ffb8ca, #9f465b, #f6a7bb, #af6678);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+.container--modicator {
+  height: 502px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 6px;
+  border-bottom: 1px solid $color-border;
+  //   background-image: url(/src/images/Ellipse-header.png);
+  background-size: 346px 346px;
+  background-repeat: no-repeat;
+  background-position: top 83px left 36px;
+}
+
+.img__link--icecream {
+  width: 171px;
+  height: 410px;
+  position: absolute;
+  right: 32px;
+  bottom: 0;
+  z-index: 3;
+  cursor: pointer;
+  display: block;
+}
+.title {
+  position: relative;
+  z-index: 5;
+
+  &__main {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $color-tex-one;
+    z-index: 10;
+    margin-bottom: 19px;
+    cursor: default;
+  }
+}
