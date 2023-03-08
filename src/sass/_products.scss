@@ -1,0 +1,228 @@
+body {
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+.container {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.subtitle__products {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  padding-top: 60px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.title__products {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.products {
+  height: 629px;
+}
+.product__image {
+  margin-top: 40px;
+  width: 280px;
+}
+
+.container__product--1 {
+  position: relative;
+}
+.container__product--label--1 {
+  width: 280px;
+  height: 489px;
+  background: #ffb8ca;
+  border-radius: 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 180px;
+  z-index: -1;
+}
+
+.container__product--2 {
+  position: relative;
+}
+.container__product--label--2 {
+  width: 280px;
+  height: 489px;
+  background: #f0d1a5;
+  border-radius: 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 180px;
+  z-index: -1;
+}
+.container__product--3 {
+  position: relative;
+}
+.container__product--label--3 {
+  width: 280px;
+  height: 489px;
+  background: #c2e297;
+  border-radius: 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 180px;
+  z-index: -1;
+}
+.product__name {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 160px;
+  margin-bottom: 32px;
+}
+.container__elipses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.product__elipse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 4px;
+}
+.product__elipse:last-child {
+  margin-right: 0;
+}
+
+.description__product {
+  font-family: 'dm sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  width: 200px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  .container {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container__product--1 {
+    width: 100%;
+  }
+  .container__product--label--1 {
+    width: 100%;
+  }
+  .container__product--2 {
+    width: 100%;
+  }
+  .container__product--label--2 {
+    width: 100%;
+  }
+  .container__product--3 {
+    width: 100%;
+  }
+  .container__product--label--3 {
+    width: 100%;
+  }
+  .product__image {
+    width: 100%;
+  }
+  .description__product {
+    width: 100%;
+  }
+  .title__products {
+    align-content: center;
+  }
+  .subtitle__products {
+    align-content: center;
+  }
+  .products {
+    width: 100%;
+  }
+  .product__name {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 768px;
+  }
+  .container__products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .product__image {
+    width: 224px;
+  }
+  .container__product--label--1 {
+    width: 224px;
+  }
+  .container__product--label--2 {
+    width: 224px;
+  }
+  .container__product--label--3 {
+    width: 224px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+  .container__products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .product__image {
+    width: 368px;
+  }
+  .container__product--label--1 {
+    width: 368px;
+  }
+  .container__product--label--2 {
+    width: 368px;
+  }
+  .container__product--label--3 {
+    width: 368px;
+  }
+}
