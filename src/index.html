@@ -1,103 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Ice Cream</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <link rel="stylesheet" href="./css/index.css" />
     <script type="module" src="./index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Titan+One&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <include src="./partials/header.html"></include>
     <include src="./partials/products.html"></include>
-
-    <!--section comentarios -->
-    <div class="container-main">
-      <section class="container">
-        <div class="container__photo">
-          <img
-            src="./images/testimonials1 1.png"
-            class="photo"
-            alt="keyboard image"
-            width="85"
-          />
-          <img
-            src="./images/testimonials1 3.png"
-            class="photo"
-            alt="keyboard image"
-            width="85"
-          />
-          <img
-            src="./images/testimonials1 4.png"
-            class="photo"
-            alt="keyboard image"
-            width="85"
-          />
-        </div>
-        <div class="container__commet">
-          <div class="comilla"> </div>
-            <p>
-              Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-              Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-              ipsum primis in nibh vel risus.
-            </p>
-          </div>
-     
-      <div>
-         <img
-            src="./images/Ellipse 4morado.png"
-            class="elipse"
-            alt="keyboard image"
-            width="8"
-          />
-          <img
-            src="./images/Ellipse 4morado.png"
-            class="elipse"
-            alt="keyboard image"
-            width="8"
-          />
-          <img
-            src="./images/Ellipse 4morado.png"
-            class="elipse"
-            alt="keyboard image"
-            width="8"
-          />
-      </div>
-        <div class="container__name">
-          <h4>Emily, Los Angeles</h4>
-        </div>
-
-        <div>
-          <img
-            src="./images/Vectorcasita.png"
-            class="elipse"
-            alt="keyboard image"
-            width="10"
-
-          /><img
-            src="./images/Ellipse 7.png"
-            class="elipse"
-            alt="keyboard image"
-            width="10"
-          />
-
-          <img
-            src="./images/Ellipse 7.png"
-            class="elipse"
-            alt="keyboard image"
-            width="10"
-          />
-
-        </div>
-      </section>
-    </div>
+    <include src="./partials/comentarios.html"></include>
   </body>
 </html>
