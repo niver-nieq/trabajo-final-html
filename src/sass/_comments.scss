@@ -1,0 +1,68 @@
+.container-main{
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+  background-color: white
+  
+}
+.container__photo{
+  display: flex;
+  justify-content: center;
+background-color: white;
+margin-top: 20px;
+}
+
+.photo{
+  margin-right: 10px;
+}
+.photo:hover{
+  opacity: 0.30;
+}
+
+.container__commet{
+  font-family: DM sans;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  padding: 47px 109px 39px 109px;
+  margin-top: 16px;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.container__commet:hover{
+text-decoration: underline;
+text-decoration-color: rgba(225, 225, 225, 1);
+ ;
+}
+
+.comilla{
+  background: url(../images/“comillas.svg) no-repeat;
+width: 150px
+}
+
+.container__name{
+  font-family: DM sans;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  
+}
+.container__name:hover{
+color: rgba(211, 19, 66, 1);
+;
+}
+.elipse{
+  margin-top: 20px;
+  padding-right: 10px;
+
+}
+
+
+/*git*/
