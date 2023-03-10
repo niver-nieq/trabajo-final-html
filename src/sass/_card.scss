@@ -1,0 +1,125 @@
+.card{
+  margin-right: 32px;
+    margin-bottom: 60px;
+    &__contact {
+    background-color:$whiteColor;
+    width: 368px;
+    height: 538px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+  }
+  &__product-cafe {
+    width: 75.1px;
+    height: 28px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $whiteColor;
+    background: $yellowColor;
+    border-radius: 6px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  &__product-food  {
+    width: 138px;
+    height: 28px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $whiteColor;
+    background: $yellowColor;
+    border-radius: 6px;
+    margin: 0;
+    margin-bottom: 32px;
+    background: $greenColor;
+  }
+  &__city {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: $blackColor;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  &__description {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: $coffeeColor;
+    margin: 0;
+    width: 244px;
+    height: 50px;
+  }
+  &__day {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: $blackColor;
+    margin: 0;
+  }
+  &__hour {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    color:$pink1Color;
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  &__tel-mail{
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+    color: $coffeeColor;
+  }
+  .card__tel-mail:hover,
+  .card__tel-mail:focus {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+    color: $pinkDarkColor;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media (min-width:768px)and(max-width:1199px) {
+  .card{
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  .card__contact{
+    width:224px;
+    height:528px;
+    padding: 20px;
+  }
+  .card__description{
+    width: 200px;
+  }
+  hr{
+    width: 200px;
+  }
+}
