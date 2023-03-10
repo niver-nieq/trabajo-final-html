@@ -1,0 +1,26 @@
+.gallery {
+  padding-bottom: 80px;
+  display: flex;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20 px;
+  max-width: 480px;
+}
+
+.container_gallery {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.container_num1,
+.container_num2,
+.container_num3,
+.container_num4,
+.container_num5,
+.container_num6 {
+  margin-right: 2px;
+  display: grid;
+}
