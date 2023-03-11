@@ -2,6 +2,9 @@ body {
   width: 100% !important;
   overflow-x: hidden !important;
 }
+.container__products {
+  margin-bottom: 60px;
+}
 
 .subtitle__products {
   font-family: 'Titan One';
@@ -65,6 +68,7 @@ body {
 
 .container__product--1 {
   position: relative;
+  margin: 0 auto;
 }
 .container__product--1:hover .container__product--label--1 {
   cursor: pointer;
@@ -88,6 +92,7 @@ body {
 
 .container__product--2 {
   position: relative;
+  margin: 0 auto;
 }
 .container__product--2:hover .container__product--label--2 {
   cursor: pointer;
@@ -109,6 +114,7 @@ body {
 }
 .container__product--3 {
   position: relative;
+  margin: 0 auto;
 }
 .container__product--3:hover .container__product--label--3 {
   cursor: pointer;
