@@ -46,6 +46,7 @@
 }
 
 .button-header-figure {
+  position: relative;
   margin-top: 7px;
   padding: 0;
   width: 18px;
@@ -54,12 +55,18 @@
   background-color: #fff;
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition-property: all;
+  border: none;
 
   &__icon {
+    position: absolute;
     fill: #d41443;
     border-radius: 50%;
     transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     transition-property: all;
+    top: 6px;
+    right: 6px;
+    width: 6px;
+    height: 6px;
   }
 }
 
