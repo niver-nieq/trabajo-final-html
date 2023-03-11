@@ -69,11 +69,33 @@ body {
 .container__product--1 {
   position: relative;
   margin: 0 auto;
-}
-.container__product--1:hover .container__product--label--1 {
-  cursor: pointer;
-  opacity: 1;
-  box-shadow: 0px 5px 15px rgba(144, 35, 62, 0.632);
+
+  &:hover .container__product--label--1 {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0px 5px 15px rgba(144, 35, 62, 0.632);
+  }
+  &:hover .product__name {
+    z-index: 60;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  &:hover .description__product {
+    z-index: 60;
+    opacity: 1;
+    font-size: 110%;
+  }
+  &:hover .product__arrow {
+    transform: rotate(-90deg);
+    width: 32px;
+    height: 32px;
+    margin-top: -10px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+    background-color: red;
+    border-radius: 35%;
+    fill: white;
+    cursor: pointer;
+  }
 }
 
 .container__product--label--1 {
@@ -93,11 +115,33 @@ body {
 .container__product--2 {
   position: relative;
   margin: 0 auto;
-}
-.container__product--2:hover .container__product--label--2 {
-  cursor: pointer;
-  opacity: 1;
-  box-shadow: 0px 5px 15px rgba(144, 35, 62, 0.632);
+
+  &:hover .container__product--label--2 {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0px 5px 15px rgba(144, 35, 62, 0.632);
+  }
+  &:hover .product__name {
+    z-index: 60;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  &:hover .description__product {
+    z-index: 60;
+    opacity: 1;
+    font-size: 110%;
+  }
+  &:hover .product__arrow {
+    transform: rotate(-90deg);
+    width: 32px;
+    height: 32px;
+    margin-top: -10px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+    background-color: red;
+    border-radius: 35%;
+    fill: white;
+    cursor: pointer;
+  }
 }
 .container__product--label--2 {
   width: 280px;
@@ -115,11 +159,33 @@ body {
 .container__product--3 {
   position: relative;
   margin: 0 auto;
-}
-.container__product--3:hover .container__product--label--3 {
-  cursor: pointer;
-  opacity: 1;
-  box-shadow: 0px 5px 15px rgba(144, 35, 62, 0.632);
+
+  &:hover .container__product--label--3 {
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0px 5px 15px rgba(144, 35, 62, 0.632);
+  }
+  &:hover .product__name {
+    z-index: 60;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  &:hover .description__product {
+    z-index: 60;
+    opacity: 1;
+    font-size: 110%;
+  }
+  &:hover .product__arrow {
+    transform: rotate(-90deg);
+    width: 32px;
+    height: 32px;
+    margin-top: -10px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
+    background-color: red;
+    border-radius: 35%;
+    fill: white;
+    cursor: pointer;
+  }
 }
 .container__product--label--3 {
   width: 280px;
@@ -147,21 +213,7 @@ body {
   padding-top: 160px;
   margin-bottom: 32px;
 }
-.container__product--1:hover .product__name {
-  z-index: 60;
-  font-size: 22px;
-  cursor: pointer;
-}
-.container__product--2:hover .product__name {
-  z-index: 60;
-  font-size: 22px;
-  cursor: pointer;
-}
-.container__product--3:hover .product__name {
-  z-index: 60;
-  font-size: 22px;
-  cursor: pointer;
-}
+
 .container__elipses {
   display: flex;
   align-items: center;
@@ -191,21 +243,7 @@ body {
   width: 200px;
   margin-bottom: 60px;
 }
-.container__product--1:hover .description__product {
-  z-index: 60;
-  opacity: 1;
-  font-size: 110%;
-}
-.container__product--2:hover .description__product {
-  z-index: 60;
-  opacity: 1;
-  font-size: 110%;
-}
-.container__product--3:hover .description__product {
-  z-index: 60;
-  opacity: 1;
-  font-size: 110%;
-}
+
 .product__arrow {
   margin: 0 auto;
   fill: red;
@@ -218,39 +256,7 @@ body {
   transition-property: width, height, margin-top, transform, box-shadow,
     background-color, fill;
 }
-.container__product--1:hover .product__arrow {
-  transform: rotate(-90deg);
-  width: 32px;
-  height: 32px;
-  margin-top: -10px;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
-  background-color: red;
-  border-radius: 35%;
-  fill: white;
-  cursor: pointer;
-}
-.container__product--2:hover .product__arrow {
-  transform: rotate(-90deg);
-  width: 32px;
-  height: 32px;
-  margin-top: -10px;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
-  background-color: red;
-  border-radius: 35%;
-  fill: white;
-  cursor: pointer;
-}
-.container__product--3:hover .product__arrow {
-  transform: rotate(-90deg);
-  width: 32px;
-  height: 32px;
-  margin-top: -10px;
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.15);
-  background-color: red;
-  border-radius: 35%;
-  fill: white;
-  cursor: pointer;
-}
+
 @media screen and (min-width: 0px) and (max-width: 320px) {
   .container {
     width: auto;
