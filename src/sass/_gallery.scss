@@ -1,6 +1,6 @@
 .gallery {
   width: 110vw;
-  max-width: 1280px;
+  max-width: 1500px;
   min-width: 320px;
   justify-content: center;
   margin: auto;
@@ -31,35 +31,74 @@
 .container_num6 {
   display: grid;
 }
-
+.container_num2 {
+  margin-top: 30px;
+}
+.container_num4 {
+  margin-top: 50px;
+}
 @media (min-width: 320px) and (max-width: 768px) {
-  .container_num1,
-  .container_num2,
-  .container_num3,
-  .container_num4,
-  .container_num5,
-  .container_num6 {
+  .container_image1,
+  .container_image2,
+  .container_image2_1,
+  .container_image3,
+  .container_image3_1,
+  .container_image4,
+  .container_image4_1,
+  .container_image5,
+  .container_image5_1,
+  .container_image6 {
+    border-radius: 10px;
+    margin-top: 2px;
     margin-right: 2px;
+    cursor: pointer;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1200px) {
-  .container_num1,
-  .container_num2,
-  .container_num3,
-  .container_num4,
-  .container_num5,
-  .container_num6 {
-    margin-right: 4px;
+  .container_image1,
+  .container_image2,
+  .container_image2_1,
+  .container_image3,
+  .container_image3_1,
+  .container_image4,
+  .container_image4_1,
+  .container_image5,
+  .container_image5_1,
+  .container_image6 {
+    border-radius: 20px;
+    margin-top: 3px;
+    margin-right: 5px;
+    cursor: pointer;
   }
 }
 
 @media (min-width: 1200px) {
-  .container_num1,
-  .container_num2,
-  .container_num3,
-  .container_num4,
-  .container_num5,
-  .container_num6 {
-    margin-right: 9px;
+  .container_image1,
+  .container_image2,
+  .container_image2_1,
+  .container_image3,
+  .container_image3_1,
+  .container_image4,
+  .container_image4_1,
+  .container_image5,
+  .container_image5_1,
+  .container_image6 {
+    border-radius: 30px;
+    margin-top: 6px;
+    margin-right: 7px;
+    cursor: pointer;
+  }
+}
+
+.container_image1:hover,
+.container_image1:focus {
+  box-shadow: 0px 8px 30px rgba(250, 250, 250, 0.6);
+  transform: scale (1.3) translate (-8px, 8px);
+  @media (min-width: 768px) and (max-width: 1200px) {
+    transform: scale(1.3) translate(-10px, -10px);
+  }
+  @media (min-width: 1200px) {
+    transform: scale(1.3) translate(-15px, -15px);
   }
 }
