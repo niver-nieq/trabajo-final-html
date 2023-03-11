@@ -1,0 +1,20 @@
+.networks {
+  &__container {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+  }
+  &__icon {
+    width: 34px;
+    height: 34px;
+    background-color: $pinkColor;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+  &__icon:hover {
+    background-color: $pinkDarkColor;
+  }
+}
