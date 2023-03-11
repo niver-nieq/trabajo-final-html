@@ -1,0 +1,131 @@
+.header-counter {
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Titan One, sans-serif;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 1.15;
+    color: #d41443;
+    background-image: url(/src/images/Ellipse\ 2.png);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+  }
+  &__spam {
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #fff;
+  }
+  &__item--zise {
+    width: 51px;
+  }
+}
+
+.header-figure {
+  margin-left: 120px;
+  width: 114px;
+  height: 73px;
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #fff;
+  position: relative;
+  display: none;
+}
+
+.button-header-figure {
+  margin-top: 7px;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition-property: all;
+
+  &__icon {
+    fill: #d41443;
+    border-radius: 50%;
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition-property: all;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-product {
+    margin-left: 0px;
+  }
+  .header-counter {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container--modicator {
+    padding-top: 37px;
+    height: 399px;
+    border: none;
+    background-size: 322px 322px;
+    background-position: bottom 46px right 137px;
+
+    .title {
+      margin-bottom: 66px;
+      margin-top: 0px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .image__link--icecream {
+      width: 143px;
+      height: 336px;
+      right: 247px;
+    }
+  }
+  .header-figure {
+    display: block;
+    &__image::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -5px;
+      left: -120px;
+      z-index: 30;
+      width: 124px;
+      height: 126px;
+      background-image: url(/src/images/slider1-header.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+  }
+
+  .link-header {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+    z-index: 30;
+    width: 168px;
+    height: 133px;
+    background-image: url(/src/images/slider3-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
