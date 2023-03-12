@@ -1,0 +1,130 @@
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 137px;
+  &__logo {
+    margin-right: auto;
+  }
+  &__nav {
+    .icon-burger {
+      fill: #d41443;
+    }
+    .navigation {
+      display: none;
+    }
+  }
+  &__switch {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .menu {
+    margin-bottom: 15px;
+    &__nav {
+      .icon-burger {
+        margin-right: 32px;
+      }
+    }
+    &__switch {
+      display: block;
+      .btn--buynow {
+        border-radius: 22px;
+        border-style: none;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        .link {
+          text-decoration: none;
+          padding-top: 11px;
+          padding-bottom: 11px;
+          padding-left: 40px;
+          padding-right: 40px;
+          .buy {
+            margin-right: 12px;
+            color: #d41443;
+          }
+          .greater-than {
+            color: #d41443;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu {
+    align-items: center;
+    margin-left: -70px;
+    margin-bottom: 84px;
+    &__nav {
+      .icon-burger {
+        display: none;
+      }
+
+      .navigation {
+        display: block;
+
+        margin-right: 90px;
+
+        &__desktop {
+          display: flex;
+          list-style: none;
+          gap: 35px;
+          .item {
+            .link-item {
+              font-family: 'DM Sans';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 21px;
+              display: flex;
+              align-items: center;
+              color: #ffffff;
+              text-decoration: none;
+              cursor: pointer;
+              &:hover {
+                color: #d41443;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__switch {
+      display: block;
+      .btn--buynow {
+        border-radius: 22px;
+        border-style: none;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        .link {
+          text-decoration: none;
+          padding-top: 11px;
+          padding-bottom: 11px;
+          padding-left: 40px;
+          padding-right: 40px;
+          .buy {
+            margin-right: 12px;
+            color: #d41443;
+          }
+          .greater-than {
+            color: #d41443;
+          }
+        }
+      }
+    }
+  }
+}
