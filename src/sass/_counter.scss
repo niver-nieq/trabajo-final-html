@@ -54,25 +54,26 @@
   background-color: #fff;
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition-property: all;
+  border: none;
 
   &__icon {
     fill: #d41443;
     border-radius: 50%;
     transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     transition-property: all;
+    width: 8px;
+    height: 7px;
+    padding-top: 2px;
   }
 }
 
 @media (max-width: 768px) {
-  .header-product {
-    margin-left: 0px;
-  }
   .header-counter {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .container--modicator {
     padding-top: 37px;
     height: 399px;
@@ -85,6 +86,15 @@
       margin-top: 0px;
       display: flex;
       justify-content: space-between;
+
+      &__main {
+        font-size: 22px;
+        line-height: 1.14;
+      }
+      .title__passion {
+        font-size: 34px;
+        line-height: 0.91;
+      }
     }
     .image__link--icecream {
       width: 143px;
@@ -92,6 +102,7 @@
       right: 247px;
     }
   }
+
   .header-figure {
     display: block;
     &__image::before {
@@ -107,15 +118,12 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+    .header-product {
+      margin-left: 0px;
+    }
   }
 
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-    margin: 0 auto;
-  }
-
-  .link-header {
+  .link-header::before {
     content: '';
     display: block;
     position: absolute;
@@ -127,5 +135,120 @@
     background-image: url(/src/images/slider3-header.png);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container--modicator {
+    height: 665px;
+    background-size: 538px 538px;
+    background-position: bottom 75px right 267px;
+
+    .link-header::before {
+      width: 293px;
+      height: 232px;
+      right: 107px;
+    }
+    .image__link--icecream {
+      width: 236px;
+      height: 557px;
+      right: 450px;
+      bottom: -17px;
+    }
+    .title {
+      margin-left: 0;
+      margin-bottom: 112px;
+      &__main {
+        font-size: 38px;
+        line-height: 1.16;
+      }
+      .title__passion {
+        font-size: 58px;
+        line-height: 0.91;
+      }
+    }
+    .button {
+      &__one {
+        width: 102px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 1.28;
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          padding-top: 0px;
+          line-height: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      &__two {
+        width: 138px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 1.28;
+        a {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          line-height: 18px;
+          padding-top: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .header-counter {
+      &__item {
+        background-size: 30px 30px;
+        width: 76px;
+        height: 77px;
+        font-size: 46px;
+        line-height: 1.15;
+      }
+      &__spam {
+        font-size: 14px;
+        line-height: 1.29;
+      }
+      &__item--zise {
+        width: 92px;
+      }
+    }
+    .header-figure {
+      width: 200px;
+      height: 124px;
+      margin-left: 180px;
+      font-size: 14px;
+      line-height: 1.42;
+      &__image::before {
+        width: 188px;
+        height: 191px;
+        left: -210px;
+        bottom: -5px;
+      }
+      .header-product {
+        width: 200px;
+        height: 78px;
+        &__text {
+          font-size: 14px;
+          line-height: 1.43;
+        }
+        .button-header-figure {
+          width: 26px;
+          height: 26px;
+          padding-top: 2px;
+
+          &__icon {
+            width: 12px;
+            height: 11px;
+          }
+        }
+      }
+    }
   }
 }
