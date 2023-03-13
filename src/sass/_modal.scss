@@ -7,6 +7,10 @@
     justify-content: center;
     align-items: center;
     position: fixed;
+    &__location{
+      position: absolute;
+      z-index: 25;
+    }
   }
 .is-hidden {
     visibility: hidden;
