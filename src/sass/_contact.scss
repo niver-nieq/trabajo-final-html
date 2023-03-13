@@ -9,7 +9,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
+      
     }
     &__list {
       margin: 0;
@@ -76,6 +76,9 @@
   }
   .contact__button{
     margin-bottom: 20px;
+  }
+  .contact__box{
+    flex-wrap: wrap;
   }
 }
 
