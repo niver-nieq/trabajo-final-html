@@ -1,16 +1,17 @@
 header {
-  background: linear-gradient(-45deg, #ffb8ca, #9f465b, #f6a7bb, #af6678);
+  background: linear-gradient(50deg, #ffb8ca, #9f465b, #f6a7bb, #af6678);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
+
 .container--modicator {
   height: 502px;
   position: relative;
   overflow: hidden;
-  padding-top: 6px;
+  padding-top: 10px;
   border-bottom: 1px solid #e17992;
   background-image: url(/src/images/ellipse-\ fondo-header.png);
-  // background-size: 346px 346px;
+  background-size: 346px 346px;
   background-repeat: no-repeat;
   background-position: top 83px left 36px;
 }
@@ -75,10 +76,13 @@ header {
     cursor: pointer;
     height: 24px;
     a {
+      font-style: normal;
+      font-weight: 400;
       font-size: 8px;
       line-height: 1.25;
       color: #fff;
       display: flex;
+      padding-top: 3px;
       align-items: center;
       text-align: center;
     }
@@ -95,10 +99,13 @@ header {
     cursor: pointer;
     height: 24px;
     a {
+      font-style: normal;
+      font-weight: 400;
       font-size: 8px;
       line-height: 1.25;
       color: #d41443;
       display: flex;
+      padding-top: 3px;
       align-items: center;
       text-align: center;
     }
