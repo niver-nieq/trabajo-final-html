@@ -81,6 +81,7 @@
     width: 220px;
     margin-left: 20px;
     margin-right: 80px;
+    padding-top: 310px;
   }
 
   .information__text h2 {
@@ -89,11 +90,30 @@
     line-height: 162%;
   }
 
-  .information__text img {
-    width: 100%;
+  .image-vaca {
+    background-image: url(../images/vaca-360.png);
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    left: 0;
+    margin-left: 26px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-milk {
+    background-image: url(../images/mil-360.png);
+    width: 280px;
+    height: 133px;
+    scale: 1.6;
+    margin-left: 70px;
+    margin-top: -330px;
     position: absolute;
     display: flex;
-    right: 0;
+    justify-content: center;
+    align-items: center;
   }
 
   .information__text p {
@@ -111,6 +131,8 @@
     color: #d41443;
     border: none;
     padding: 10px 56px 10px 37px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 
     font-family: 'DM Sans';
     font-style: normal;
@@ -126,6 +148,10 @@
     background: #d41443;
   }
 
+  .information__date {
+    padding-bottom: 120px;
+  }
+
   .information__date-gift p {
     font-size: 46px;
     line-height: 41px;
@@ -137,13 +163,11 @@
     line-height: 170%;
     margin: 0 140px 0 20px;
     padding-top: 14px;
-    padding-bottom: 70px;
   }
 
   .information__svg {
     width: 50px;
     margin: 0px 260px 0px 20px;
-    padding-top: 20px;
   }
 }
 
@@ -154,13 +178,25 @@
     margin-bottom: 80px;
   }
 
-  .container__text img {
-    margin-left: 32px;
+  .image-vaca {
+    background-image: url(../images/vaca-720.png);
+    width: 336px;
+    height: 336px;
+    position: absolute;
+    left: 0;
+    margin-left: 26px;
+  }
+
+  .image-milk {
+    background-image: url(../images/milk-720.png);
+    width: 768px;
+    height: 336px;
+    position: absolute;
+    scale: 1.2;
+    left: 78px;
   }
 
   .container__information h1 {
-    font-family: 'Titan One';
-    font-style: normal;
     font-weight: 400;
     font-size: 26px;
     line-height: 21px;
@@ -188,22 +224,23 @@
   .information__text {
     margin-left: 32px;
     margin-right: 34px;
+    width: 300px;
+    margin-left: 370px;
   }
 
   .information__text h2 {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 176%;
-    color: #000000;
-    margin-right: 32px;
   }
 
   .information__text p {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 176%;
     letter-spacing: 0.04em;
     color: #907e82;
+    margin-top: 22px;
   }
 
   .information__text button {
@@ -220,6 +257,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    margin-top: 22px;
   }
 
   .information__text button:hover {
@@ -231,6 +269,7 @@
     display: flex;
     justify-content: center;
     gap: 80px;
+    padding-bottom: 120px;
   }
 
   .information__svg {
@@ -256,5 +295,134 @@
     font-size: 14px;
     line-height: 175%;
     margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container__information {
+    padding-top: 60px;
+  }
+
+  .container__text {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .container__information h1 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .container__information p {
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .image-vaca {
+    background-image: url(../images/vaca-1200.png);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    margin-left: 66px;
+  }
+
+  .image-milk {
+    background-image: url(../images/milk-1200.png);
+    width: 1200px;
+    height: 521px;
+    position: absolute;
+    scale: 1.1;
+    left: 60px;
+    margin-top: -400px;
+  }
+
+  .information__text {
+    display: flex;
+    flex-direction: column;
+    width: 463px;
+    margin-left: 562px;
+    padding-top: 120px;
+  }
+
+  .information__text h2 {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 176%;
+  }
+
+  .information__text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    color: #907e82;
+    margin-top: 32px;
+  }
+
+  .information__text button {
+    width: 176px;
+    height: 44px;
+    background: #fff;
+    border-radius: 22px;
+    color: #d41443;
+    border: none;
+    padding: 10px 6px 10px 37px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .information__text button:hover {
+    color: #fff;
+    background: #d41443;
+  }
+
+  .information__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding-bottom: 120px;
+    column-gap: 90px;
+  }
+
+  .information__date-gift {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .information__date-gift p {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .information__date-gift h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
+
+  .information__date-gift svg {
+    width: 50px;
   }
 }
