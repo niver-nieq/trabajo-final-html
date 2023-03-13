@@ -59,11 +59,21 @@
   &__icon {
     fill: #d41443;
     border-radius: 50%;
-    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    // transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     transition-property: all;
     width: 8px;
     height: 7px;
     padding-top: 2px;
+  }
+
+  &:hover {
+    transform: rotate(90deg);
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .button-header-figure__icon:hover {
+    fill: white;
   }
 }
 
@@ -129,7 +139,7 @@
     position: absolute;
     bottom: 0;
     right: 34px;
-    z-index: 30;
+    // z-index: 30;
     width: 168px;
     height: 133px;
     background-image: url(/src/images/slider3-header.png);
@@ -246,6 +256,15 @@
           &__icon {
             width: 12px;
             height: 11px;
+          }
+          &:hover {
+            transform: rotate(90deg);
+            background-color: red;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          .button-header-figure__icon:hover {
+            fill: white;
           }
         }
       }

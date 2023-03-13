@@ -16,5 +16,11 @@
   }
   &__icon:hover {
     background-color: $pinkDarkColor;
+    width: 50px;
+    height: 50px;
+    transition: width 100ms linear;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+    
   }
 }
